@@ -15,12 +15,6 @@ const PORT = process.env.PORT;
 
 const __dirname = path.resolve();
 
-app.use(
-  cors({
-    origin: "https://stream-chat-frontend-amber.vercel.app",
-    credentials: true, // allow frontend to send cookies
-  })
-);
 
 app.use(express.json());
 app.use(cookieParser());
